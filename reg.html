@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+
+  <style>
+      form{
+        padding: 10px;
+      }
+      div{
+        margin-bottom: 10px;
+      }
+  </style>
+</head>
+
+<body>
+  <!-- Registration Form -->
+  <main>
+    <fieldset>
+      <legend>
+        <h1>Registration Form</h1>
+      </legend>
+
+      <form action="mailto:staimoornz@gmail.com" method="post" enctype="text/plain" style="background-color:rgb(152, 156, 168);">
+        <!-- Name -->
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" name="fname" id="firstName" placeholder="e.g. sunny" required>
+
+          <br>
+
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lname" id="lastName" placeholder="e.g. dev" required>
+        </div>
+
+        <!-- password -->
+        <div>
+          <label for="pass">Password</label>
+          <input type="password" name="password" id="pass" placeholder="Set your password" minlength="8" required>
+        </div>
+
+        <!-- email -->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="e.g. example@gmail.com" required>
+        </div>
+        <!-- DOB -->
+        <div>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date">
+        </div>
+        <div>
+          <!-- Moblie Number -->
+          <label for="Mobile Number">Mobile Number</label>
+          <input type="number">
+      </div>
+
+        <div>
+            <label for="color">Choose Your Favourite Color</label>
+            <input type="datetime-local">
+        </div>
+
+        <!-- gender -->
+        <div>
+          <span>Gender: </span>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" required>
+          <label for="fmail">Female</label>
+          <input type="radio" name="gender" id="fmail" value="female" required>
+        </div>
+
+        <!-- City -->
+        <div>
+          <label for="city">Select Your City: </label>
+          <select name="city" id="city" required>
+              <option value="" disabled selected> -- Select -- </option>
+              <option value="Karachi">Karachi</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Islamabad">Islamabad</option>
+          </select>
+        </div>
+
+        <br>
+        <input type="checkbox" name="agree/disagree" id="yes-no" required>
+        <label for="yes-no">You will agree and confirm all the field is correct</label>
+        <br>
+        <br>
+            <div>
+        <label for="For comments "></label>
+        <textarea name="Comments" id="Comments" cols="30" rows="10" placeholder="Any suggestion"></textarea>
+    </div>
+    <a href="" target=""></a>
+      
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <span class="nyclass myclass1 myclass2"></span>
+      </form>
+    </fieldset>
+  </main>
+</body>
+
+</html>
